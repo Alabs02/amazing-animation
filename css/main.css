@@ -1,0 +1,108 @@
+html {
+    scroll-behavior: smooth;
+    font-family: "Heebo", sans-serif;
+    font-size: 62.5%;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.landing {
+    min-height: 100vh;
+    /* border: 1px solid red; */
+    background: url('../img/hero-img.jpg') center center  no-repeat;
+    background-size: cover;
+    padding: 0rem 5rem;
+}   
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    /* border: 1px solid red; */
+}
+
+.nav__heading {
+    font-weight: lighter;
+    font-family: "Lobster", cursive;
+    font-size: 2rem;
+}
+
+.nav__links {
+    display: flex;
+}
+
+.nav__link {
+    padding-left: 5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    text-decoration-color: #212121;
+    color: #212121;
+}
+
+.text-xl {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-family: "Lobster", cursive;
+    font-size: 5rem;
+    color: rgb(232, 232, 232);
+    color: white;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #fff;
+}
+
+.intro__text {
+    font-family: "Heebo", sans-serif;
+    color: #F5F5F5;
+    font-size: 3rem;
+}
+
+.slider {
+    transform: translateY(100%);
+    background-color: rgb(97, 105, 109);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #fff;
+}
+
+.hide {
+    background: #000000;
+    overflow: hidden;
+}
+
+.hide span {
+    display: inline-block;
+    transform: translateY(100%);
+}
